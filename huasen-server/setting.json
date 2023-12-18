@@ -1,11 +1,11 @@
 {
   "site": {
-    "brandName": "花森",
-    "brandUrl": "",
-    "redirectUrl": "http://huasen.cc/",
-    "guidePageName": "花森小窝",
-    "guidePageUrl": "http://huasen.cc/",
-    "footerHtml": "<a href=\"https://beian.miit.gov.cn/\">桂ICP备20001761号</a>",
+    "brandName": "小龟",
+    "brandUrl": "huasen-store/img/1702889608491.png",
+    "redirectUrl": "https://www.huitogo.club/",
+    "guidePageName": "小龟小屋",
+    "guidePageUrl": "https://www.huitogo.club/",
+    "footerHtml": "<a href=\"https://beian.miit.gov.cn/\">皖ICP备19024261号-1</a>",
     "openLabelClassification": true,
     "jwt": "",
     "jwtLiveTime": 604800,
@@ -40,12 +40,12 @@
   "mail": {
     "host": "smtp.qq.com",
     "port": 465,
-    "user": "932397243@qq.com",
+    "user": "2550462328@qq.com",
     "mtp": ""
   },
   "article": {
-    "changelog": "648c79d1cdf0f0076b134525",
-    "about": "648c79d1cdf0f0076b134525",
+    "changelog": "65800224fd5331002dd4a57d",
+    "about": "6580064cb67c000046830849",
     "help": "648c79d1cdf0f0076b134525"
   }
 }
