@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2022-08-30 00:45:43
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-18 16:48:44
+ * @LastEditTime: 2023-12-19 09:51:13
  * @Description: 
 -->
 <template>
@@ -316,6 +316,7 @@ export default {
     .dropdown {
       color: inherit;
     }
+    margin-right: 22px;
   }
   .sign {
     order: 6;
