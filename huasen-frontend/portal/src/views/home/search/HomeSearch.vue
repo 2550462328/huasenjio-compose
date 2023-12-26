@@ -311,6 +311,7 @@ export default {
   transform: translateX(-50%);
   border-radius: 24px;
   background-color: var(--gray-o7);
+  z-index: 3;
   form {
     position: relative;
     width: 100%;

@@ -1,8 +1,8 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2021-12-05 20:23:00
- * @LastEditors: huasenjio
- * @LastEditTime: 2023-03-24 21:21:27
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-26 17:59:26
  * @Description: 锚点导航组件
 -->
 <template>
@@ -57,21 +57,19 @@ export default {
   padding-top: 10px;
   padding-bottom: 10px;
   box-sizing: border-box;
-  background-color: var(--gray-50);
   main {
     width: calc(100% - 20px);
     margin: 0 auto;
     padding: 10px 0;
     box-sizing: border-box;
-    background-color: var(--gray-0);
     ul {
       width: calc(100% - 20px);
       margin: 0 auto;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      background-color: var(--gray-50);
       .record-item {
+        z-index: 3;
         position: relative;
         width: 110px;
         padding: 10px;

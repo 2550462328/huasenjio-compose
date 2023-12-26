@@ -22,7 +22,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  z-index: 2;
+  z-index: 3;
 }
 .wheel-and-hamster {
   --dur: 1s;
@@ -48,7 +48,7 @@
 }
 .wheel {
   background: radial-gradient(100% 100% at center, rgba(153, 153, 153, 0) 47.8%, #999999 48%);
-  z-index: 2;
+  z-index: 3;
 }
 .hamster {
   -webkit-animation: hamster var(--dur) ease-in-out infinite;

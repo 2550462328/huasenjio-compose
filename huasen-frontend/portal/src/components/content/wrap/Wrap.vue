@@ -1,8 +1,8 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2022-07-31 21:51:50
- * @LastEditors: huasenjio
- * @LastEditTime: 2023-04-13 00:07:49
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-26 16:23:44
  * @Description: 框架组件
 -->
 <template>
@@ -74,7 +74,7 @@ export default {
     font-size: 12px;
     border-top: 1px solid var(--gray-50);
     background-color: var(--gray-0);
-    z-index: 1;
+    z-index: 3;
     a {
       color: var(--gray-600);
     }

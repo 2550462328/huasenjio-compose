@@ -1,8 +1,8 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2021-11-15 00:52:46
- * @LastEditors: huasenjio
- * @LastEditTime: 2022-09-20 22:38:17
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-26 15:48:15
  * @Description: 壁纸
 -->
 <template>
@@ -67,6 +67,9 @@ export default {
     height: 100%;
     background-position: center center;
     background-size: cover;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.65;
   }
   .bg-shadow {
     position: absolute;

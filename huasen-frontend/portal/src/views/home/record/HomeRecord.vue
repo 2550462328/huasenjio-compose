@@ -1,8 +1,8 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2021-12-05 20:23:00
- * @LastEditors: huasenjio
- * @LastEditTime: 2023-06-10 00:12:58
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-26 15:31:21
  * @Description: 
 -->
 <template>
@@ -12,7 +12,7 @@
         自定义网站
         <i class="iconfont icon-md-attach"></i>
       </div>
-      <ul>
+      <ul style="z-index: 3;">
         <li @click="openAddMode">
           <i class="iconfont icon-tianjia"></i>
           <span class="sm:hidden">添加</span>
@@ -289,13 +289,13 @@ export default {
   width: 100%;
   margin: 285px auto 0 auto;
   padding: 10px 0 20px 0;
-  background-color: var(--gray-0);
   header {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .title {
+      z-index: 3;
       display: flex;
       align-items: center;
       font-size: 16px;
@@ -329,7 +329,6 @@ export default {
     width: calc(100% - 40px);
     margin: 0 auto;
     border-radius: 3px;
-    background-color: var(--gray-50);
     ul {
       display: flex;
       align-items: center;

@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2022-08-30 00:45:43
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-19 09:51:13
+ * @LastEditTime: 2023-12-26 15:49:16
  * @Description: 
 -->
 <template>
@@ -255,7 +255,7 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   color: var(--gray-50);
-  z-index: 2;
+  z-index: 3;
   .fold {
     order: 1;
     width: 75px;

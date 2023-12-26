@@ -1,8 +1,8 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2022-07-31 21:51:50
- * @LastEditors: huasenjio
- * @LastEditTime: 2023-03-28 01:04:33
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-26 18:00:59
  * @Description: 
 -->
 <template>
@@ -149,10 +149,10 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  color: var(--gray-700);
   .content {
     width: 100%;
     height: 100%;
-    background-color: var(--gray-0);
     z-index: 1;
     .home-content {
       position: relative;
@@ -166,7 +166,6 @@ export default {
         width: 100%;
         height: 100%;
         padding: 10px;
-        background-color: var(--gray-50);
         box-sizing: border-box;
       }
     }
