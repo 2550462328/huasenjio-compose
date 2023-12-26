@@ -1,8 +1,8 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2022-09-09 00:24:16
- * @LastEditors: huasenjio
- * @LastEditTime: 2022-11-06 13:43:27
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-26 18:24:46
  * @Description: 
 -->
 <template>
@@ -48,7 +48,6 @@ export default {
   align-items: center;
   box-sizing: border-box;
   overflow: auto;
-  background-color: var(--gray-0);
   main {
     width: 200px;
     height: 200px;

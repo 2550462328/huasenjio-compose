@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2022-07-31 21:51:50
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-26 18:00:59
+ * @LastEditTime: 2023-12-26 18:32:35
  * @Description: 
 -->
 <template>
@@ -149,7 +149,7 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  color: var(--gray-700);
+  color: var(--gray-760);
   .content {
     width: 100%;
     height: 100%;

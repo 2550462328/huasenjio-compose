@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2021-12-08 23:24:34
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-26 18:02:53
+ * @LastEditTime: 2023-12-26 18:29:14
  * @Description: 
 -->
 <template>
@@ -252,7 +252,7 @@ export default {
               }
               .site-card {
                 transform: translateY(-2px);
-                box-shadow: 0 26px 40px -24px var(--gray-1000);
+                box-shadow: 0 26px 40px -24px var(--gray-500);
               }
             }
           }
