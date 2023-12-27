@@ -1,8 +1,8 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2022-08-28 23:45:07
- * @LastEditors: huasenjio
- * @LastEditTime: 2023-04-29 00:43:49
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-27 15:50:50
  * @Description: 
 -->
 <template>
@@ -11,12 +11,12 @@
       <li v-if="showWrapSidebarSocket" class="animate__animated animate__fadeIn shadow">
         <i class="iconfont icon-md-rocket" @click="goTop"></i>
       </li>
-      <li class="shadow">
+      <!-- <li class="shadow">
         <i class="iconfont icon-github" @click="goStorage"> </i>
-      </li>
-      <li class="shadow">
+      </li> -->
+      <!-- <li class="shadow">
         <i class="iconfont icon-weixin" @mouseenter="showConnectPannel" @mouseleave="closeConnectPannel"> </i>
-      </li>
+      </li> -->
       <li class="shadow" @click="readHelp">
         <i class="iconfont icon-md-help-circle"></i>
       </li>
@@ -76,7 +76,7 @@ export default {
   position: absolute;
   right: 0;
   bottom: 50px;
-  z-index: 1;
+  z-index: 3;
   ul {
     li {
       width: 40px;

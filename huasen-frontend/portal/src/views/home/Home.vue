@@ -6,7 +6,7 @@
  * @Description: 
 -->
 <template>
-  <div class="home">
+  <div class="home" :style="contentStyle">
     <!-- 背景 -->
     <HomeWallpaper></HomeWallpaper>
     <!-- 主要内容 -->
@@ -53,10 +53,16 @@ export default {
     };
   },
   computed: {
-    ...mapState(['categorySites']),
+    ...mapState(['categorySites','user']),
     categoryEmpty() {
       return this.categorySites.length === 0 ? true : false;
     },
+    contentStyle() {
+      let style = {};
+      let color = this.user.config.bgColor || 760;
+      style['color'] = `var(--gray-${color})`;
+      return style;
+    }
   },
   mounted() {
     this.initScrollEvent();
@@ -149,7 +155,6 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  color: var(--gray-760);
   .content {
     width: 100%;
     height: 100%;

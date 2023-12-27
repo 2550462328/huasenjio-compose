@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2021-12-05 20:23:00
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-26 15:31:21
+ * @LastEditTime: 2023-12-27 14:25:23
  * @Description: 
 -->
 <template>
@@ -37,10 +37,10 @@
           <i class="iconfont icon-md-happy"></i>
           <span class="sm:hidden">墙纸</span>
         </li>
-        <li @click="openSimpleMode">
+        <!-- <li @click="openSimpleMode">
           <i class="iconfont icon-md-qr-scanner"></i>
           <span class="sm:hidden">全屏</span>
-        </li>
+        </li> -->
       </ul>
     </header>
     <main v-rightMenu>

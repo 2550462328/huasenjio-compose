@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2021-11-15 00:52:46
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-26 15:48:15
+ * @LastEditTime: 2023-12-27 12:26:51
  * @Description: 壁纸
 -->
 <template>
@@ -28,12 +28,14 @@ export default {
       let style = {};
       let config = this.user.config;
       let tag = this.TOOL.judgeBgType(config.bg);
+      let bgOpacity = config.bgOpacity;
       // 处理背景图片
       if (tag === 'img' || tag === 'module' || tag === 'base64') {
-        style['backgroundImage'] = `url(${config.bg})`;
+        style.backgroundImage = `url(${config.bg})`;
       } else if (tag === 'color') {
-        style['backgroundColor'] = config.bg;
+        style.backgroundColor = config.bg;
       }
+      style.opacity = bgOpacity || 0.65;
       return style;
     },
     shadowStyle() {
@@ -59,6 +61,8 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
+  pointer-events: none;
   .bg {
     position: absolute;
     top: 0;
@@ -67,9 +71,6 @@ export default {
     height: 100%;
     background-position: center center;
     background-size: cover;
-    z-index: 2;
-    pointer-events: none;
-    opacity: 0.65;
   }
   .bg-shadow {
     position: absolute;

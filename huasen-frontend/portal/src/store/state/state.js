@@ -1,8 +1,8 @@
 /*
  * @Autor: huasenjio
  * @Date: 2021-08-25 01:53:35
- * @LastEditors: huasenjio
- * @LastEditTime: 2023-03-30 00:42:12
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-27 13:59:04
  * @Description: 数据状态树
  */
 export default {
@@ -22,6 +22,10 @@ export default {
       bgFilter: 0,
       // 背景明暗0-1（黑）
       bgLightness: 0,
+      // 背景透明度 0-1
+      bgOpacity: 0,
+      // 背景文字灰度 0 -1000
+      bgColor: 0,
       // 明亮模式
       lightMode: false,
       // 极简模式

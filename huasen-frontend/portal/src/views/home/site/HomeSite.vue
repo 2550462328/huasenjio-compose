@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2021-12-08 23:24:34
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-26 18:29:14
+ * @LastEditTime: 2023-12-27 15:48:09
  * @Description: 
 -->
 <template>
@@ -203,6 +203,7 @@ export default {
               transition: transform 0.3s ease;
             }
             .site-card {
+              z-index: 3;
               position: relative;
               height: 50px;
               padding: 5px;
@@ -210,11 +211,8 @@ export default {
               align-items: center;
               border-radius: 3px;
               border: 1px solid rgba(0, 0, 0, 0.02);
-              box-shadow: 0px 0px 20px -5px rgba(158, 158, 158, 0.2);
-              transition: box-shadow 0.3s ease;
-              transition: transform 0.3s ease;
+              background-color: rgba(255,255,255, 0.1);
               .img-group {
-                z-index: 3;
                 position: absolute;
                 left: 10px;
                 width: 42px;
@@ -233,7 +231,6 @@ export default {
                 }
               }
               .text-group {
-                z-index: 3;
                 width: calc(100% - 50px);
                 display: block;
                 margin-left: 60px;
@@ -241,7 +238,7 @@ export default {
                   font-weight: 500;
                 }
                 .describe {
-                  color: var(--gray-600);
+                  color: #C4C4C4;
                   font-size: 12px;
                 }
               }
@@ -252,7 +249,8 @@ export default {
               }
               .site-card {
                 transform: translateY(-2px);
-                box-shadow: 0 26px 40px -24px var(--gray-500);
+                background-color: rgba(255,255,255, 0.3);
+                box-shadow: 0px 0px 20px -5px var(--gray-600);
               }
             }
           }

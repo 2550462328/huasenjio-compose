@@ -1,8 +1,8 @@
 <!--
  * @Autor: huasenjio
  * @Date: 2022-09-19 22:14:21
- * @LastEditors: huasenjio
- * @LastEditTime: 2023-04-13 22:47:34
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2023-12-27 14:02:20
  * @Description: 
 -->
 <template>
@@ -31,6 +31,14 @@
             <section class="other">
               <div>遮罩浓度</div>
               <el-slider :show-tooltip="false" class="w-px-380 pl-px-8" :min="0" :max="1" :step="0.1" v-model="sliderLightness" @change="changeShadow"></el-slider>
+            </section>
+            <section class="other">
+              <div>背景透明度</div>
+              <el-slider :show-tooltip="false" class="w-px-380 pl-px-8" :min="0" :max="1" :step="0.1" v-model="bgOpacity" @change="changeBgOpacity"></el-slider>
+            </section>
+            <section class="other">
+              <div>文字灰度</div>
+              <el-slider :show-tooltip="false" class="w-px-380 pl-px-8" :min="0" :max="1000" :step="100" v-model="bgColor" @change="changeBgColor"></el-slider>
             </section>
           </div>
         </el-collapse-item>
@@ -84,6 +92,10 @@ export default {
       sliderFilter: 0,
       // 控制封面遮罩浓度
       sliderLightness: 0,
+      // 控制背景图的透明度
+      bgOpacity: 0,
+      // 控制背景文字的灰度
+      bgColor: 0,
       // 封面颜色可选纯色系
       pures: [
         {
@@ -161,6 +173,8 @@ export default {
     this.bg = this.user.config.bg;
     this.sliderFilter = this.user.config.bgFilter;
     this.sliderLightness = this.user.config.bgLightness;
+    this.bgOpacity = this.user.config.bgOpacity || 0.65;
+    this.bgColor = this.user.config.bgColor || 760;
   },
   methods: {
     ...mapMutations(['commitAll']),
@@ -184,7 +198,24 @@ export default {
         },
       });
     },
-
+    changeBgOpacity(val) {
+      this.initCustomStyle({
+        user: {
+          config: {
+            bgOpacity: val,
+          },
+        },
+      });
+    },
+    changeBgColor(val) {
+      this.initCustomStyle({
+        user: {
+          config: {
+            bgColor: val,
+          },
+        },
+      });
+    },
     // 上传文件转换成base64进行保存
     beforeUpload(file) {
       // 1048576 = 1M
