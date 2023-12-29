@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2022-09-19 22:14:21
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-27 14:02:20
+ * @LastEditTime: 2023-12-27 17:17:13
  * @Description: 
 -->
 <template>
@@ -39,6 +39,15 @@
             <section class="other">
               <div>文字灰度</div>
               <el-slider :show-tooltip="false" class="w-px-380 pl-px-8" :min="0" :max="1000" :step="100" v-model="bgColor" @change="changeBgColor"></el-slider>
+            </section>
+            <section class="other">
+              <div>文字颜色</div>
+              <ul>
+                <li v-for="(item, index) in displayPure" :key="index" :style="{ backgroundColor: item.background }" @click="changeTitle(item)"></li>
+                <li>
+                  <el-color-picker v-model="bg" size="mini" @change="changeTitle($event, 'pick')"> </el-color-picker>
+                </li>
+              </ul>
             </section>
           </div>
         </el-collapse-item>
@@ -96,6 +105,7 @@ export default {
       bgOpacity: 0,
       // 控制背景文字的灰度
       bgColor: 0,
+      titleColor: '',
       // 封面颜色可选纯色系
       pures: [
         {
@@ -175,6 +185,7 @@ export default {
     this.sliderLightness = this.user.config.bgLightness;
     this.bgOpacity = this.user.config.bgOpacity || 0.65;
     this.bgColor = this.user.config.bgColor || 760;
+    this.titleColor = this.user.config.titleColor;
   },
   methods: {
     ...mapMutations(['commitAll']),
@@ -242,6 +253,15 @@ export default {
         user: {
           config: {
             bg: tag == 'pick' ? val : val.background,
+          },
+        },
+      });
+    },
+    changeTitle(val, tag) {
+      this.initCustomStyle({
+        user: {
+          config: {
+            titleColor: tag == 'pick' ? val : val.background,
           },
         },
       });

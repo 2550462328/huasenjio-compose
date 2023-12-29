@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2021-12-05 20:23:00
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-27 14:25:23
+ * @LastEditTime: 2023-12-27 17:52:32
  * @Description: 
 -->
 <template>
@@ -286,7 +286,7 @@ export default {
 
 <style lang="scss" scoped>
 .home-record {
-  width: 100%;
+  width: 76%;
   margin: 285px auto 0 auto;
   padding: 10px 0 20px 0;
   header {

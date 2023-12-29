@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2021-12-08 23:24:34
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-27 15:48:09
+ * @LastEditTime: 2023-12-28 19:15:38
  * @Description: 
 -->
 <template>
@@ -48,8 +48,8 @@
                   <img v-lazy :src="imgUrl(site)" />
                 </div>
                 <div class="text-group">
-                  <div class="name text">{{ site.name }}</div>
-                  <div class="describe inherit-text text">{{ site.describe }}</div>
+                  <div class="name text" :style="titleStyle">{{ site.name }}</div>
+                  <div class="describe inherit-text text" :style="descStyle">{{ site.describe }}</div>
                 </div>
               </div>
             </a>
@@ -87,7 +87,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(['appConfig', 'categorySites']),
+    ...mapState(['appConfig', 'categorySites','user']),
 
     categorySitesData() {
       let data = this.LODASH.cloneDeep(this.categorySites) || [];
@@ -97,6 +97,18 @@ export default {
       });
       return data;
     },
+    titleStyle() {
+      let style = {};
+      let color = this.user.config.titleColor;
+      style['color'] = color;
+      return style;
+    },
+    descStyle() {
+      let style = {};
+      let color = this.user.config.bgColor || 760;
+      style['color'] = `var(--gray-${color})`;
+      return style;
+    }
   },
   mounted() {
     this.$store.dispatch('initLocalStyleInfo');
@@ -161,9 +173,9 @@ export default {
 .home-site {
   flex: 1;
   position: relative;
+  width: 76%;
+  margin: 10px auto 0 auto;
   section {
-    width: calc(100% - 20px);
-    margin: 10px auto 0 auto;
     &:first-of-type {
       margin-top: 0px;
     }
@@ -176,6 +188,7 @@ export default {
         align-items: center;
         flex-wrap: wrap;
         .category-icon {
+          z-index: 3;
           font-size: 20px;
           font-weight: 500;
         }
@@ -198,7 +211,7 @@ export default {
           display: flex;
           flex-wrap: wrap;
           .site {
-            margin-top: 10px;
+            margin: 10px;
             .pin-group {
               transition: transform 0.3s ease;
             }
@@ -209,9 +222,9 @@ export default {
               padding: 5px;
               display: flex;
               align-items: center;
-              border-radius: 3px;
-              border: 1px solid rgba(0, 0, 0, 0.02);
-              background-color: rgba(255,255,255, 0.1);
+              border-radius: 5px;
+              border: 1px solid rgba(0, 0, 0, 0.03);
+              background-color: rgba(255,255,255, 0.15);
               .img-group {
                 position: absolute;
                 left: 10px;
@@ -238,7 +251,6 @@ export default {
                   font-weight: 500;
                 }
                 .describe {
-                  color: #C4C4C4;
                   font-size: 12px;
                 }
               }

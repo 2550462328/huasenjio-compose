@@ -2,7 +2,7 @@
  * @Autor: huasenjio
  * @Date: 2021-12-05 20:23:00
  * @LastEditors: huizhang43 huizhang43@iflytek.com
- * @LastEditTime: 2023-12-26 17:59:26
+ * @LastEditTime: 2023-12-28 19:16:03
  * @Description: 锚点导航组件
 -->
 <template>
@@ -53,12 +53,13 @@ export default {
 
 <style lang="scss" scoped>
 .home-nav {
-  width: 100%;
+  width: 76%;
+  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
   box-sizing: border-box;
   main {
-    width: calc(100% - 20px);
+    width: 100%;
     margin: 0 auto;
     padding: 10px 0;
     box-sizing: border-box;
