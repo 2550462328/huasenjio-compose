@@ -1,12 +1,13 @@
 /*
  * @Autor: huasenjio
  * @Date: 2021-08-25 01:53:35
- * @LastEditors: huasenjio
- * @LastEditTime: 2022-09-19 21:52:11
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2024-01-02 16:31:06
  * @Description:
  */
 import Vue from 'vue';
 import Router from 'vue-router';
+
 import state from '@/store/state/state';
 import routes from '@/config/router.config.json';
 
@@ -21,6 +22,7 @@ import Nprogress from 'nprogress';
 import 'nprogress/nprogress.css';
 
 Vue.use(Router);
+
 
 // 创建路由节点
 const createRoute = routes => {

@@ -6,6 +6,7 @@
  * @Description:
  */
 import Vue from 'vue';
+
 const that = Vue.prototype;
 import Router from 'vue-router';
 import Nprogress from 'nprogress';

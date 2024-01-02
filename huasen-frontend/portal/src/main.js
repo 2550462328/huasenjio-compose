@@ -1,8 +1,8 @@
 /*
  * @Autor: huasenjio
  * @Date: 2021-08-25 01:53:35
- * @LastEditors: huasenjio
- * @LastEditTime: 2022-10-24 00:20:17
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2024-01-02 16:36:49
  * @Description:
  */
 import Vue from 'vue';
@@ -28,7 +28,6 @@ Vue.prototype.CONSTANT = constant;
 Vue.prototype.API = api;
 Vue.prototype.STORAGE = storage;
 Vue.prototype.LODASH = lodash;
-
 Vue.config.productionTip = false;
 new Vue({
   router,

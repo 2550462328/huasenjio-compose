@@ -1,12 +1,11 @@
 /*
  * @Autor: huasenjio
  * @Date: 2021-08-25 01:53:35
- * @LastEditors: huasenjio
- * @LastEditTime: 2023-03-27 01:13:35
+ * @LastEditors: huizhang43 huizhang43@iflytek.com
+ * @LastEditTime: 2024-01-02 16:35:49
  * @Description:
  */
 import Vue from 'vue';
-
 import App from './App.vue';
 import router from './router';
 import store from './store';
