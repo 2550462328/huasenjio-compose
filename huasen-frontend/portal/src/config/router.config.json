@@ -58,5 +58,21 @@
     "component": "third/ChatGpt",
     "title": "ChatGpt聊天工具",
     "children": []
+  },
+  {
+    "path": "/todo",
+    "name": "Todo",
+    "menuCode": "000",
+    "component": "third/Todo",
+    "title": "todolist待办清单",
+    "children": []
+  },
+  {
+    "path": "/youdao",
+    "name": "Youdao",
+    "menuCode": "000",
+    "component": "third/Youdao",
+    "title": "有道笔记",
+    "children": []
   }
 ]
