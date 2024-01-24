@@ -44,22 +44,6 @@
     "children": []
   },
   {
-    "path": "/blog",
-    "name": "Blog",
-    "menuCode": "000",
-    "component": "third/Blog",
-    "title": "博客平台",
-    "children": []
-  },
-  {
-    "path": "/chat",
-    "name": "ChatGpt",
-    "menuCode": "000",
-    "component": "third/ChatGpt",
-    "title": "ChatGpt聊天工具",
-    "children": []
-  },
-  {
     "path": "/todo",
     "name": "Todo",
     "menuCode": "000",
