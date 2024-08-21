@@ -42,13 +42,5 @@
     "component": "read/Read",
     "title": "阅读",
     "children": []
-  },
-  {
-    "path": "/todo",
-    "name": "Todo",
-    "menuCode": "000",
-    "component": "third/Todo",
-    "title": "todolist待办清单",
-    "children": []
   }
 ]

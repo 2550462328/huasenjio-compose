@@ -10,16 +10,6 @@ const navs = [
     name: '主页',
     path: '/home',
     iconClass: 'iconfont icon-iconset0278',
-  },
-  {
-    name: '文章',
-    path: '/article',
-    iconClass: 'iconfont icon-iconset0156',
-  },
-  {
-    name: '待办清单',
-    path: '/todo',
-    iconClass: 'iconfont icon-iconset0448',
   }
 ];
 export default navs;
